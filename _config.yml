@@ -51,12 +51,46 @@ author:
 # Add links to the sidebar.
 menu:
 
+  - title:             Language
+    url:               /language/
+    submenu:
+      - title:         Java
+        url:           /java/
+      - title:         Sql
+        url:           /sql/
+
+  - title:             Project
+    url:               /project/
+    submenu:
+      - title:         Test
+        url:           /test/
+
+
+  - title:             CodingTest
+    url:               /codingTest/
+    submenu:
+      - title:         Problem
+        url:           /problem/
+      - title:         Appendix
+        url:           /appendix/
+
+  - title:             TechInterview
+    url:               /techInterview/
+    submenu:
+      - title:         Test
+        url:           /test/
+        
+  - title:             TIL
+    url:               /til/
+
+  - title:             Book
+    url:               /book/
+    submenu:
+      - title:         Test
+        url:           /test/
+
   - title:             About
     url:               /about/
-  - title:             Example1
-    url:               /example1/
-  - title:             Example2
-    url:               /example2/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
