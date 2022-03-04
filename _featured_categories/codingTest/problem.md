@@ -1,6 +1,6 @@
 ---
 layout: list
-category: codingTest
+category: codingtest
 bigtitle: Problem
 slug: problem
 description: >

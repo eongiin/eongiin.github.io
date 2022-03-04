@@ -1,11 +1,11 @@
 ---
 layout: list
 bigtitle: TechInterview
-slug: techInterview
+slug: technterview
 menu: true
 submenu: true
 description: >
-  TechInterview
+  Tech Interview
 ---
 
 # Tech Interview

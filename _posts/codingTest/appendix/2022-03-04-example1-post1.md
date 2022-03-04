@@ -6,7 +6,7 @@ description: >
 sitemap: false
 hide_last_modified: true
 categories:
-  - codingTest
+  - codingtest
   - appendix
 ---
 # CodingTest-Appendix-post1

@@ -1,11 +1,11 @@
 ---
 layout: list
 bigtitle: CodingTest
-slug: codingTest
+slug: codingtest
 menu: true
 submenu: true
 description: >
-  CodingTest
+  Coding Test
 ---
 
 # Coding Test

@@ -1,6 +1,6 @@
 ---
 layout: list
-category: techInterview
+category: techinterview
 bigtitle: Test
 slug: test
 description: >

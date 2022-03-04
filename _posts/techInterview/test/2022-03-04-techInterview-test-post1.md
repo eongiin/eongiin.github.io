@@ -6,7 +6,7 @@ description: >
 sitemap: false
 hide_last_modified: true
 categories:
-  - techInterview
+  - techinterview
   - test
 ---
 # TechInterview-Test-post1
