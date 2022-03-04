@@ -1,7 +1,7 @@
 ---
 layout: list
 bigtitle: TechInterview
-slug: technterview
+slug: techinterview
 menu: true
 submenu: true
 description: >
