@@ -4,14 +4,14 @@ bigtitle: TechInterview
 slug: techinterview
 menu: true
 submenu: true
-description: >
-  Tech Interview
+# description: >
+#   Tech Interview
 ---
 
 # Tech Interview
 
 ## Category
 
-* [Test]{:.heading.flip-title} --- 테스트 
+* [Data Structure]{:.heading.flip-title}
 
-[Test]: /test/
+[Data Structure]: /datastructure/

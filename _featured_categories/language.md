@@ -4,8 +4,8 @@ bigtitle: Language
 slug: language
 menu: true
 submenu: true
-description: >
-  Languages
+# description: >
+#   Languages
 ---
 
 # Language
@@ -13,7 +13,7 @@ description: >
 ## Category
 
 * [Java]{:.heading.flip-title}
-* [Sql]{:.heading.flip-title}
+* [SQL]{:.heading.flip-title}
 
 [Java]: /java/
-[Sql]: /sql/
+[SQL]: /sql/

@@ -56,7 +56,7 @@ menu:
     submenu:
       - title:         Java
         url:           /java/
-      - title:         Sql
+      - title:         SQL
         url:           /sql/
 
   - title:             Project
@@ -66,7 +66,7 @@ menu:
         url:           /test/
 
 
-  - title:             CodingTest
+  - title:             Coding Test
     url:               /codingtest/
     submenu:
       - title:         Problem
@@ -74,11 +74,11 @@ menu:
       - title:         Appendix
         url:           /appendix/
 
-  - title:             TechInterview
+  - title:             Tech Interview
     url:               /techinterview/
     submenu:
-      - title:         Test
-        url:           /test/
+      - title:         Data Structure
+        url:           /datastructure/
         
   - title:             TIL
     url:               /til/
@@ -86,11 +86,11 @@ menu:
   - title:             Book
     url:               /book/
     submenu:
-      - title:         Test
-        url:           /test/
+      - title:         Clean Code
+        url:           /cleanCode/
 
-  - title:             About
-    url:               /about/
+  # - title:             About
+  #   url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -457,3 +457,11 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+tipue_search:
+  include:
+    pages: false
+    collections: []
+  exclude:
+    files: []
+    categories: []
+    tags: []

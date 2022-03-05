@@ -1,10 +1,10 @@
 ---
 layout: list
-category: techinterview
+category: project
 bigtitle: Test
 slug: test
-description: >
-  하위메뉴 테스트1
+# description: >
+#   하위메뉴 테스트1
 
 related_posts:
     - 

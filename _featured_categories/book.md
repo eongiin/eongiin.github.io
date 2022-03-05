@@ -4,14 +4,14 @@ bigtitle: Book
 slug: book
 menu: true
 submenu: true
-description: >
-  Book
+# description: >
+ 
 ---
 
 # Book
 
 ## Category
 
-* [Test]{:.heading.flip-title}
+* [Clean Code]{:.heading.flip-title}
 
-[Test]: /test/
+[Clean Code]: /cleancode/

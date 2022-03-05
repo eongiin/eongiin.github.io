@@ -1,11 +1,11 @@
 ---
 layout: list
-bigtitle: CodingTest
+bigtitle: Coding Test
 slug: codingtest
 menu: true
 submenu: true
-description: >
-  Coding Test
+# description: >
+#   Coding Test
 ---
 
 # Coding Test
