@@ -67,7 +67,7 @@ menu:
 
 
   - title:             Coding Test
-    url:               /codingtest/
+    url:               /codingTest/
     submenu:
       - title:         Problem
         url:           /problem/
@@ -75,10 +75,10 @@ menu:
         url:           /appendix/
 
   - title:             Tech Interview
-    url:               /techinterview/
+    url:               /techInterview/
     submenu:
       - title:         Data Structure
-        url:           /datastructure/
+        url:           /dataStructure/
         
   - title:             TIL
     url:               /til/

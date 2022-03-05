@@ -12,6 +12,6 @@ description: >
 
 ## Category
 
-* [Test]{:.heading.flip-title} --- 테스트 
+* [Test]{:.heading.flip-title} 
 
 [Test]: /test/

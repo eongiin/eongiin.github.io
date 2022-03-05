@@ -1,6 +1,6 @@
 ---
 layout: list
-category: codingtest
+category: codingTest
 bigtitle: Appendix
 slug: appendix
 # description: >

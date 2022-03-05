@@ -1,7 +1,7 @@
 ---
 layout: list
-bigtitle: TechInterview
-slug: techinterview
+bigtitle: Tech Interview
+slug: techInterview
 menu: true
 submenu: true
 # description: >
@@ -14,4 +14,4 @@ submenu: true
 
 * [Data Structure]{:.heading.flip-title}
 
-[Data Structure]: /datastructure/
+[Data Structure]: /dataStructure/
