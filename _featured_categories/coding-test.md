@@ -1,7 +1,7 @@
 ---
 layout: list
 bigtitle: Coding Test
-slug: codingTest
+slug: coding-test
 menu: true
 submenu: true
 # description: >
