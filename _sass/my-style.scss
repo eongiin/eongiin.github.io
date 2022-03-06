@@ -67,8 +67,8 @@
 }
 
 .markdown-body {
+
   kbd {
-    font-family: monospace;
     font-size: 15px;
     color: #555;
     background-color: #fcfcfc;
@@ -82,7 +82,7 @@
   mark {
     padding: 3px 5px;
     background-color: rgba(184,222,176,0.5);
-    font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif';
+    // font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif';
     font-weight: 500;
     color: #6D7B6A;
     border-radius: 3px;
@@ -98,4 +98,25 @@ under {
   b,h1,h2,h3,h4,h5,h6,strong{
     color: #7E9B78
   }
+}
+
+// $serif-primary: 'RIDIBatang' !important;
+// $sans-serif: 'RIDIBatang' !important;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+under,
+mark,
+kbd,
+code {
+  font-family: 'RIDIBatang' !important;
+}
+
+code {
+  font-size:16px !important;
 }
