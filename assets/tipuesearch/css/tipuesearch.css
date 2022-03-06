@@ -38,8 +38,8 @@ http://www.tipue.com/search
 #tipue_search_input
 {
      color: #333;
-     max-width: 15rem;
-     max-height:2rem;
+     max-width: 180px;
+     max-height:20px;
 	padding: 15px;
 	border: 2px solid #98af9e;
 	border-radius: 0;
