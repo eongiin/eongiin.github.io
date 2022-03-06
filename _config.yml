@@ -75,10 +75,10 @@ menu:
         url:           /appendix/
 
   - title:             Tech Interview
-    url:               /techInterview/
+    url:               /tech-interview/
     submenu:
       - title:         Data Structure
-        url:           /dataStructure/
+        url:           /data-structure/
         
   - title:             TIL
     url:               /til/
@@ -87,7 +87,7 @@ menu:
     url:               /book/
     submenu:
       - title:         Clean Code
-        url:           /cleanCode/
+        url:           /clean-code/
 
   # - title:             About
   #   url:               /about/

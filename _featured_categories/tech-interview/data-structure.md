@@ -1,8 +1,8 @@
 ---
 layout: list
-category: techInterview
+category: tech-interview
 bigtitle: Data Structure
-slug: dataStructure
+slug: data-structure
 description: >
   하위메뉴 테스트1
 

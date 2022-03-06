@@ -14,4 +14,4 @@ submenu: true
 
 * [Clean Code]{:.heading.flip-title}
 
-[Clean Code]: /cleanCode/
+[Clean Code]: /clean-code/
