@@ -88,13 +88,13 @@
 }
 .slick-prev:before
 {
-    /* content: '←'; */
-    content: url(left.png);
+    content: '<';
+    /* content: url(left.png); */
 }
 [dir='rtl'] .slick-prev:before
 {
-    /* content: '→'; */
-    content: url(right.png);
+    content: '>';
+    /* content: url(right.png); */
 }
 
 .slick-next
@@ -108,13 +108,13 @@
 }
 .slick-next:before
 {
-    /* content: '→'; */
-    content: url(right.png);
+    content: '>';
+    /* content: url(right.png); */
 }
 [dir='rtl'] .slick-next:before
 {
-    /* content: '←'; */
-    content: url(left.png);
+    content: '<';
+    /* content: url(left.png); */
 }
 
 /* Dots */
