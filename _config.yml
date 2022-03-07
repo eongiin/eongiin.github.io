@@ -25,7 +25,7 @@ title:                 eongiin
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  이곳에는 무엇을 적을까요
+  공부한 것을 매일 기록하는 공간입니다
 
 # A shorter description for the sidebar.
 tagline:               공부한 것을 매일 기록하는 공간입니다
@@ -88,6 +88,12 @@ menu:
     submenu:
       - title:         Clean Code
         url:           /clean-code/
+
+  - title:             Etc
+    url:               /etc/
+    submenu:
+      - title:         Blog
+        url:           /blog/
 
   # - title:             About
   #   url:               /about/
