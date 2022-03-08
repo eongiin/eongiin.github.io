@@ -180,7 +180,7 @@ code {
   display: inline-block !important;
   float: left !important;
   position: relative !important;
-  background-color: $main-color !important;
+  background-color: #95C08C !important;
 }
 .list-post > ul > li > div{
   white-space: nowrap !important;
@@ -230,4 +230,8 @@ code {
 }
 .list-post li.h6{
   margin-top: 0 !important;
+}
+
+.flip-title > span{
+  margin-left:10px;
 }
