@@ -22,13 +22,14 @@
     <!--카테고리-->
     <div class="post-date">
       {% assign category_start     = " "     | default:" in " %}
-      {% assign tag_start          = " #"          | default:" - " %} 
       {% assign category_separator = site.data.strings.category_separator | default:" / " %}
-      {% assign tag_separator      = " #"     | default:". "  %}
+      <!-- {% assign tag_start          = " #"          | default:" - " %} 
+      {% assign tag_separator      = " #"     | default:". "  %} -->
     
     <span class="ellipis mrl">
+
       {% include components/tag-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator %}
-      {% include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %}
+      <!-- {% include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %} -->
       <!--년월일-->
       <br>
       {% assign post_format = "%Y-%m-%d" | default:"%Y %m %d" %}
@@ -36,6 +37,7 @@
     </span>
     <br>
     </div>
+    <br>
     {% assign alt = false %}
     {% unless hide_image %}{% if post.image %}
       {% unless no_link_title %}<a href="{{ post.url | relative_url }}" class="no-hover no-print-link {% unless post.hide_image %}flip-project{% endunless %}" tabindex="-1">{% endunless %}

@@ -1,4 +1,10 @@
 $main-color: #7E9B78;
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('/assets/fonts/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .dl-table {
   a {
@@ -234,4 +240,19 @@ code {
 
 .flip-title > span{
   margin-left:10px;
+}
+
+//태그
+.my-tag > .tag{
+  background-color: #9fc498;
+  color:#fff;
+  margin:5px;
+  font-size: 16px;
+  padding:4px;
+  border-radius: 5px;
+}
+
+.my-tag > .tag:hover{
+  background-color: $main-color;
+
 }

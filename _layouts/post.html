@@ -1,7 +1,15 @@
 ---
 layout: base
 ---
-
+<div class="my-tag">
+{% if page.tags %}
+    {% for tag in page.tags %}
+        {% if site.data.tags contains tag %}
+            <span class="tag">{{ site.data.format[tag] }}</span>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+</div>
 {% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image hide_description=page.hide_description %}
 
 {% include analytics.html %}
@@ -9,5 +17,5 @@ layout: base
 {% include components/page-botton.html %}
 <br><br>
 {% include_cached components/about.html author=page.author %}
-{% include components/related-posts.html %}
+<!-- {% include components/related-posts.html %} -->
 {% include components/comments.html %}

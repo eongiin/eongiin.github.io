@@ -89,6 +89,9 @@ menu:
       - title:         Clean Code
         url:           /clean-code/
 
+  - title:             Tag
+    url:               /tag/
+
   - title:             Etc
     url:               /etc/
     submenu:
