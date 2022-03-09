@@ -1,0 +1,254 @@
+$main-color: #7E9B78;
+
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('/assets/fonts/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dl-table {
+  a {
+    @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      text-underline-offset: .8rem;
+    }
+    @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      padding-bottom: .45rem;
+    }
+  }
+
+  .btn, .gumroad-button  {
+    margin: 1rem 0;
+  }
+}
+// for top-menu
+.top-menu-wrapper{
+  display: inline-block;
+}
+.top-menu{
+  overflow-x: auto; // overflowx 속성은 x 축, 즉 왼쪽과 오른쪽의 내용이 더 길 때(가로),
+  overflow-y: hidden; // overflowy 속성은 y 축, 즉 위와 아래의 내용이 더 길때 (세로) 어떻게 보일지 선택하는 속성
+  white-space: nowrap; // whitespace 는 스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성, nowrap :병합
+}
+// for top-menu
+.top-menu.nav-btn{
+  border: none;
+  display: inline-flex; // Flex 는 요소의 크기가 불분명하거나 동적인 경우에도, 각 요소를 정렬할 수 있는 효율적인 방법을 제공, Inline 특성의 Flex Container 를 정의
+  width: 7rem; // inlineflex : Inline(Inline Block) 요소와 같은 성향(수평 쌓임)
+  margin-left: -1px;
+}
+
+// // profile avatar image
+// .content .avatar {
+//   float: right !important;    // 왼쪽으로 보낼지 오른쪽으로 보낼지
+//   box-sizing: content-box;
+//   border: 1rem solid var(--body-bg);
+//   transition: border-color 1s ease;
+//   margin-top: 5px !important;
+//   margin-left: 5px !important;
+//   width:140px !important; 	// 이미지 크기
+//   height:140px !important;
+// }
+// .author-body-description {
+//   margin-left: 20px !important;  // 소개글 위치 정하기 200px
+//   margin-top: 20px !important;      // 20px
+// }
+
+
+
+
+.content a:not(.btn):not(.no-hover) {
+    text-decoration-color: #98af9e;
+}
+
+// 게시물 안에 링크 스타일
+.markdown-body > p > a{
+  font-weight: bold !important;
+  color: $main-color !important;
+}
+
+.markdown-body > li> p > a{
+  font-weight: bold !important;
+  color: &$main-color !important;
+}
+
+
+.markdown-body >blockquote> p > a{
+  font-weight: bold !important;
+  color: $main-color !important;
+}
+
+
+
+.markdown-body {
+
+  kbd {
+    font-size: 15px;
+    color: #555;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
+    padding: 3px 5px;
+  }
+
+  mark {
+    padding: 3px 5px;
+    background-color: rgba(184,222,176,0.5);
+    // font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif';
+    font-weight: 500;
+    color: #6D7B6A;
+    border-radius: 3px;
+  }
+
+under {
+    text-decoration: underline;
+    text-decoration-color: green !important;
+    text-underline-position:under;
+    padding-bottom : 2px;
+  }
+ 
+  b,h1,h2,h3,h4,h5,h6,strong{
+    color: $main-color;
+  }
+}
+
+// font
+// $serif-primary: 'RIDIBatang' !important;
+// $sans-serif: 'RIDIBatang' !important;
+
+
+* {
+  font-family: 'RIDIBatang' !important;
+}
+
+code {
+  font-size:16px !important;
+}
+
+// 이전 글 다음 글 버튼
+
+.button {
+  margin-top: 0em;
+  padding-top: 0em;
+  display: block;
+  padding: 1em 2em;
+  float: left;
+  width: 50%;
+
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: $main-color;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color:#eff3ef
+}
+
+.button:hover {
+  background-color:#c2e0bf;
+}
+#prev{
+  border-radius:50px 0 0 50px;
+}
+#next{
+  float: right;
+  border-radius:0 50px 50px 0;
+}
+
+
+// time-line 목차 리스트
+.list-lead{
+  margin-bottom: 0 !important;
+}
+.list-lead::after {
+  content:"" !important;
+  display:block !important;
+  position: relative !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+  top: -21px !important;
+  left: 62px !important;
+  // border: 3px solid;
+
+  background-color: $main-color !important;
+  z-index: 1 !important;
+}
+.list-post li {
+  line-height: 3rem !important;
+}
+.list-post > ul > li:first-child::before, .list-post > ul > li::after{
+  content: "" !important;
+  width: 4px !important;
+  left: 66px !important;
+  display: inline-block !important;
+  float: left !important;
+  position: relative !important;
+  background-color: #95C08C !important;
+}
+.list-post > ul > li > div{
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.list-post > ul > li > div > a{
+  margin-left: 1.5rem !important;
+  position: relative !important;
+}
+.list-post > ul > li > div > a::before{
+  content: "" !important;
+  display: inline-block !important;
+  position: relative !important;
+  border-radius: 50% !important;
+  width: 8px !important;
+  height: 8px !important;
+  float: left !important;
+  top: 1.35rem !important;
+  left: 60px !important;
+  box-shadow: 0 0 5px 0 green !important;
+  background-color: white !important;
+  z-index: 1 !important; 
+
+  transition: all 0.5s !important;
+}
+.list-post > ul > li > div > a:hover::before{
+  background-color: $main-color !important;
+  margin-right: 0.3rem !important;
+  box-shadow: 0 0 2px 0 green !important;
+}
+.list-post > ul > li:first-child::before{
+  height: 3.0rem !important;
+  top: -1.5rem !important;
+}
+.list-post > ul > li:not(:last-child)::after{
+  height: 3.3rem !important;
+  top: -1.3rem !important;
+}
+.list-post ul:not(:last-child)>li:last-child::after{
+  height: 5.2rem !important;
+  top: -1.3rem !important;
+}
+
+.list-post .related-posts>li+li{
+  margin-top: 0 !important;
+}
+.list-post li.h6{
+  margin-top: 0 !important;
+}
+
+.flip-title > span{
+  margin-left:10px;
+}
+
+
+.my-tag{
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+#breadcrumbs{
+  display: none;
+}

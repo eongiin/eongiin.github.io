@@ -1,0 +1,32 @@
+{% assign cat = page.categories[0] %}
+{% if page.categories[1] %}
+  {% assign cat = page.categories[1] %}
+{% endif %}
+{% assign cat_list = site.categories[cat]%}
+{% for post in cat_list %}
+  {% if post.url == page.url %}
+  	{% assign prevIndex = forloop.index0 | minus: 1 %}
+  	{% assign nextIndex = forloop.index0 | plus: 1 %}
+  	{% if forloop.first == false %}
+  	  {% assign next_post = cat_list[prevIndex] %}
+  	{% endif %}
+  	{% if forloop.last == false %}
+  	  {% assign prev_post = cat_list[nextIndex] %}
+  	{% endif %}
+  	{% break %}
+  {% endif %}
+{% endfor %}
+
+
+<div class="page-control">
+    <div>
+      {% if prev_post %}
+      <a id="prev" class="button" href="{{ prev_post.url }}">{{ prev_post.title }}</a>
+      {% endif %}
+    </div>
+    <div>
+      {% if next_post %}
+      <a id="next" class="button" href="{{ next_post.url }}">{{ next_post.title }}</a>
+      {% endif %}
+    </div>
+  </div>

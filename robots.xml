@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+User-agent: Yeti
+Disallow: /
+
+User-agent: *
+Disallow: /book/
+DIsallow: /til/
+
+Sitemap: http://eongiin.github.io/sitemap.xml
+
+//Googlebot,Yeti
