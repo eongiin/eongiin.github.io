@@ -7,6 +7,12 @@ $main-color: #7E9B78;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'IBMPlexMono-Regular.woff';
+  src: url('/assets/fonts/IBMPlexMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .dl-table {
   a {
     @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
@@ -124,8 +130,9 @@ under {
 }
 
 pre code {
-  font-family: 'Gill Sans' !important;
+  font-family: 'IBMPlexMono-Regular.woff','sans-serif' !important;
   font-size: 1em; 
+  tab-size: 1em;
 }
 
 // 이전 글 다음 글 버튼
