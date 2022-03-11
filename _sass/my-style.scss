@@ -70,7 +70,7 @@ $main-color: #7E9B78;
 // 게시물 안에 링크 스타일
 .markdown-body > p > a{
   font-weight: bold !important;
-  color: $main-color !important;
+  color: #728a6d !important;
 }
 
 .markdown-body > li> p > a{
@@ -115,8 +115,20 @@ under {
     padding-bottom : 2px;
   }
  
-  b,h1,h2,h3,h4,h5,h6,strong{
+  b,h1,h2,strong{
     color: $main-color;
+  }
+  h3{
+    color:#728a6d;
+  }
+  h4{
+    color:#657761;
+  }
+  h5{
+    color:#586654;
+  }
+  h6{
+    color:#4f5a4c;
   }
 }
 
