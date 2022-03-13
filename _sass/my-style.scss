@@ -71,6 +71,21 @@ $main-color: #7E9B78;
 .markdown-body > p > a{
   font-weight: bold !important;
   color: #728a6d !important;
+
+}
+.markdown-body > p > a:link,
+.my-tag a:link,
+.ellipis a:link{
+  border-bottom: dotted;
+  text-decoration: none;
+}
+
+.toc-show a:link{
+  text-decoration: none;
+}
+.toc-show a:hover{
+  color: #728a6d !important;
+  font-weight: bold !important;
 }
 
 .markdown-body > li> p > a{
