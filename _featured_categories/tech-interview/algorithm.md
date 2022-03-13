@@ -1,11 +1,11 @@
 ---
 layout: category-list
 category: tech-interview
-bigtitle: Data Structure
-slug: data-structure
+bigtitle: Algorithm
+slug: algorithm
 # description: >
 #   하위메뉴 테스트1
-order: 2
+order: 3
 ---
 
-# Data Structure
+# Algorithm

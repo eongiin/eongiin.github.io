@@ -77,9 +77,19 @@ menu:
   - title:             Tech Interview
     url:               /tech-interview/
     submenu:
+      - title:         Computer Architecture
+        url:           /computer-architecture/   
       - title:         Data Structure
         url:           /data-structure/
-        
+      - title:         Algorithm
+        url:           /algorithm/
+      - title:         Operating System
+        url:           /operating-system/
+      - title:         Network
+        url:           /network/
+      - title:         Design Pattern
+        url:           /design-pattern/
+
   - title:             TIL
     url:               /til/
 

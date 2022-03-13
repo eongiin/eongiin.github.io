@@ -1,11 +1,11 @@
 ---
 layout: category-list
 category: tech-interview
-bigtitle: Data Structure
-slug: data-structure
+bigtitle: Design Pattern
+slug: design-pattern
 # description: >
 #   하위메뉴 테스트1
-order: 2
+order: 6
 ---
 
-# Data Structure
+# Design Pattern
