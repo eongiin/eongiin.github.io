@@ -122,7 +122,10 @@ permalink:             /:categories/:year-:month-:day-:title/
 paginate:              10
 paginate_path:         /:num/
 
+# Time
 timezone: Asia/Seoul
+future: true
+
 # Theme
 # ---------------------------------------------------------------------------------------
 
