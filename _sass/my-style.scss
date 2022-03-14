@@ -68,40 +68,55 @@ $main-color: #7E9B78;
 }
 
 // 게시물 안에 링크 스타일
-.markdown-body > p > a{
-  font-weight: bold !important;
-  color: #728a6d !important;
 
+.markdown-body{
+  > p{
+    > a{
+      font-weight: bold !important;
+      color: #60725d !important;
+      &:hover{
+        color: $main-color !important;
+      }
+    }
+  }
 }
+
 .markdown-body > p > a:link,
 .my-tag a:link,
 .ellipis a:link{
-  border-bottom: dotted;
+  // border-bottom: dotted;
   text-decoration: none;
 }
 
-.toc-show a:link{
-  text-decoration: none;
+.toc-show{
+  a{
+    &:link{
+      text-decoration: none;
+    }
+    &:hover{
+      color: #728a6d !important;
+      font-weight: bold !important;
+    }
+  }
 }
-.toc-show a:hover{
-  color: #728a6d !important;
-  font-weight: bold !important;
-}
-
-.markdown-body > li> p > a{
-  font-weight: bold !important;
-  color: &$main-color !important;
-}
-
-
-.markdown-body >blockquote> p > a{
-  font-weight: bold !important;
-  color: $main-color !important;
-}
-
-
 
 .markdown-body {
+  > li{
+    > p{
+      > a{
+        font-weight: bold !important;
+        color: &$main-color !important;
+      }
+    }
+  }
+  > blockquote{
+    > p{
+      > a{
+        font-weight: bold !important;
+        color: $main-color !important;
+      }
+    }
+  }
 
   kbd {
     font-size: 15px;
@@ -123,7 +138,7 @@ $main-color: #7E9B78;
     border-radius: 3px;
   }
 
-under {
+  under {
     text-decoration: underline;
     text-decoration-color: green !important;
     text-underline-position:under;
@@ -195,27 +210,24 @@ pre code {
 
 
 // time-line 목차 리스트
+
 .list-lead{
   margin-bottom: 0 !important;
+  &::after{
+    content:"" !important;
+    display:block !important;
+    position: relative !important;
+    border-radius: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+    top: -21px !important;
+    left: 62px !important;
+    // border: 3px solid $main-color;
+    background-color: $main-color !important;
+    z-index: 1 !important;
+  }
 }
-.list-lead::after {
-  content:"" !important;
-  display:block !important;
-  position: relative !important;
-  border-radius: 50% !important;
-  width: 12px !important;
-  height: 12px !important;
-  top: -21px !important;
-  left: 62px !important;
-  // border: 3px solid;
-
-  background-color: $main-color !important;
-  z-index: 1 !important;
-}
-.list-post li {
-  line-height: 3rem !important;
-}
-.list-post > ul > li:first-child::before, .list-post > ul > li::after{
+@mixin my-time-line-style{
   content: "" !important;
   width: 4px !important;
   left: 66px !important;
@@ -224,54 +236,92 @@ pre code {
   position: relative !important;
   background-color: #95C08C !important;
 }
-.list-post > ul > li > div{
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-}
-.list-post > ul > li > div > a{
-  margin-left: 1.5rem !important;
-  position: relative !important;
-}
-.list-post > ul > li > div > a::before{
-  content: "" !important;
-  display: inline-block !important;
-  position: relative !important;
-  border-radius: 50% !important;
-  width: 8px !important;
-  height: 8px !important;
-  float: left !important;
-  top: 1.35rem !important;
-  left: 60px !important;
-  box-shadow: 0 0 5px 0 green !important;
-  background-color: white !important;
-  z-index: 1 !important; 
-
-  transition: all 0.5s !important;
-}
-.list-post > ul > li > div > a:hover::before{
-  background-color: $main-color !important;
-  margin-right: 0.3rem !important;
-  box-shadow: 0 0 2px 0 green !important;
-}
-.list-post > ul > li:first-child::before{
-  height: 3.0rem !important;
-  top: -1.5rem !important;
-}
-.list-post > ul > li:not(:last-child)::after{
-  height: 3.3rem !important;
-  top: -1.3rem !important;
-}
-.list-post ul:not(:last-child)>li:last-child::after{
-  height: 5.2rem !important;
-  top: -1.3rem !important;
+.list-post{
+  li{
+    line-height: 3rem !important;
+  }
+  > ul{
+    > li{
+      &:first-child{
+        &::before{
+          @include my-time-line-style;
+        }
+      }
+      &::after{
+        @include my-time-line-style;
+      }
+    }
+  }
 }
 
-.list-post .related-posts>li+li{
-  margin-top: 0 !important;
-}
-.list-post li.h6{
-  margin-top: 0 !important;
+.list-post{
+  li.h6{
+    margin-top: 0 !important;
+  }
+  .realted-posts{
+    > li+li{
+      margin-top: 0 !important;
+    }
+  }
+  ul{
+    &:not(:last-child){
+      > li{
+        &:last-child{
+          &::after{
+            height: 5.2rem !important;
+            top: -1.3rem !important;
+          }
+        }
+      }
+    }
+  }
+  > ul{
+    > li{
+      &:first-child{
+        &::before{
+          height: 3.0rem !important;
+          top: -1.5rem !important;
+        }
+      }
+      &:not(:last-child){
+        &::after{
+          height: 3.3rem !important;
+          top: -1.3rem !important;
+        }
+      }
+      > div{
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        > a{
+          margin-left: 1.5rem !important;
+          position: relative !important;
+          &::before{
+            content: "" !important;
+            display: inline-block !important;
+            position: relative !important;
+            border-radius: 50% !important;
+            width: 8px !important;
+            height: 8px !important;
+            float: left !important;
+            top: 1.35rem !important;
+            left: 60px !important;
+            box-shadow: 0 0 5px 0 green !important;
+            background-color: white !important;
+            z-index: 1 !important; 
+            transition: all 0.5s !important;
+          }
+          &:hover{
+            &::before{
+              background-color: $main-color !important;
+              margin-right: 0.3rem !important;
+              box-shadow: 0 0 2px 0 green !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .flip-title > span{
