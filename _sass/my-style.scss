@@ -70,10 +70,10 @@ $main-color: #7E9B78;
 // 게시물 안에 링크 스타일
 
 .markdown-body{
-  > p{
-    > a{
-      font-weight: bold !important;
-      color: #60725d !important;
+   p,ul{
+     a{
+      // font-weight: bold !important;
+      // color: #60725d !important;
       &:hover{
         color: $main-color !important;
       }
@@ -81,11 +81,16 @@ $main-color: #7E9B78;
   }
 }
 
-.markdown-body > p > a:link,
+// .markdown-body > p > a:link,
 .my-tag a:link,
 .ellipis a:link{
   // border-bottom: dotted;
   text-decoration: none;
+}
+
+.my-tag a,
+.ellipis a{
+  color: #60725d !important;
 }
 
 .toc-show{
@@ -145,7 +150,7 @@ $main-color: #7E9B78;
     padding-bottom : 2px;
   }
  
-  b,h1,h2,strong{
+ h1,h2,strong{
     color: $main-color;
   }
   h3{
