@@ -26,14 +26,10 @@
               if(headerList[i].getBoundingClientRect().top >= 0){
                 prevElement?.style.removeProperty("font-weight");
                 prevElement?.style.removeProperty("color");
-                prevElement?.style.removeProperty("border-bottom");
                 let tocId = "markdown-toc-" + headerList[i].parentNode.id;
                 prevElement = document.getElementById(tocId);
                 prevElement.style.fontWeight = "bold";
                 prevElement.style.color = '#728a6d';
-                prevElement.style.borderBottom='rgba(114,138,109,0.5) dotted';
-                
-  
                 break;
               }
             }

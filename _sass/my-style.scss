@@ -91,17 +91,21 @@ $main-color: #7E9B78;
 .my-tag a,
 .ellipis a{
   color: #60725d !important;
+  &:hover{
+    color:$main-color !important;
+  }
 }
 
 .toc-show{
   a{
     &:link{
-      text-decoration: none;
+      text-decoration:none;
     }
     &:hover{
       color: #728a6d !important;
       font-weight: bold !important;
     }
+    color:rgb(185, 202, 189);
   }
 }
 
@@ -136,10 +140,10 @@ $main-color: #7E9B78;
 
   mark {
     padding: 3px 5px;
-    background-color: rgba(184,222,176,0.5);
+    background-color: rgb(222, 233, 220);
     // font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif';
-    font-weight: 500;
-    color: #6D7B6A;
+    // font-weight: 500;
+    // color: #6c776a;
     border-radius: 3px;
   }
 
