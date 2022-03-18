@@ -7,13 +7,21 @@
 <script type="module">
     document.querySelector('hy-push-state').addEventListener('load', () => {
       let tocElement = document.getElementById("markdown-toc");
-  
+
+      let li=document.createElement("li")
+      let a=document.createElement("a")
+      a.href='#my-page-bottom'
+      a.id='markdown-toc-end'
+      a.textContent='👇'
+      li.appendChild(a)
+      tocElement.appendChild(li)
+
       if(tocElement){
         let affixedDiv = document.createElement("div");
         affixedDiv.style.position = "relative";
         affixedDiv.style.top = "-1rem";
         tocElement.parentNode.insertBefore(affixedDiv, tocElement);
-  
+
         let headerList = document.getElementsByClassName("permalink");
         if(headerList){
           let prevElement;
@@ -23,7 +31,18 @@
             else tocElement.classList.remove("affix");
   
             for(let i=0;i<headerList.length;i++){
-              if(headerList[i].getBoundingClientRect().top >= 0){
+              if(i==headerList.length-1){
+                if(headerList[i].getBoundingClientRect().top>0){
+                prevElement?.style.removeProperty("font-weight");
+                prevElement?.style.removeProperty("color");
+                let tocId = "markdown-toc-" + headerList[i].parentNode.id;
+                prevElement = document.getElementById(tocId);
+                prevElement.style.fontWeight = "bold";
+                prevElement.style.color = '#728a6d';
+                break;
+              }
+            }
+              if(headerList[i+1].getBoundingClientRect().top>100){
                 prevElement?.style.removeProperty("font-weight");
                 prevElement?.style.removeProperty("color");
                 let tocId = "markdown-toc-" + headerList[i].parentNode.id;
@@ -54,8 +73,8 @@
 
 <style> 
     ::-webkit-scrollbar{width: 13px;}
-    ::-webkit-scrollbar-track {background-color:#ffffff; border-radius: 13px;}
-    ::-webkit-scrollbar-thumb {background-color:#8f998c; border-radius: 13px;}
+    ::-webkit-scrollbar-track { border-radius: 13px;}
+    ::-webkit-scrollbar-thumb {background-color:rgba(155, 177, 149, 0.5); border-radius: 13px;}
     ::-webkit-scrollbar-thumb:hover {background: #c2e0bf;}
     ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
     {
