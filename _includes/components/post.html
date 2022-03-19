@@ -26,51 +26,37 @@
       {% assign tag_start          = "# "          | default:" - " %} 
       {% assign tag_separator      = "# "     | default:". "  %}
     
-    <span class="ellipis mrl">
-      {% include components/category-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator %}
-      <br>
-      <span class="my-tag">
-      {% include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %}
-    </span>
-      <!--년월일-->
-      <br>
-      {% assign post_format = "%Y-%m-%d" | default:"%Y %m %d" %}
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
-    </span>
-    
-    <br>
-    <a href="#my-page-bottom" id="to-bottom">👇Down</a>
+      <span class="ellipis mrl">
+        {% include components/category-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator %}
+        <br>
+        <span class="my-tag">
+        {% include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %}
+        </span>
+        <!--년월일-->
+        <br>
+        {% assign post_format = "%Y-%m-%d" | default:"%Y %m %d" %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
+        <br>
+        <a href="#my-page-bottom">👇Down</a>
+        <br>
+      </span>
     </div>
-    <br>
-    {% assign alt = false %}
-    {% unless hide_image %}{% if post.image %}
-      {% unless no_link_title %}<a href="{{ post.url | relative_url }}" class="no-hover no-print-link {% unless post.hide_image %}flip-project{% endunless %}" tabindex="-1">{% endunless %}
-        <div class="lead aspect-ratio sixteen-nine flip-project-img">
-          {% include_cached components/hy-img.html img=post.image alt=post.title width=864 height=486 %}
-        </div>
-      {% unless no_link_title %}</a>{% endunless %}
-      {% assign alt = '' %}
-    {% endif %}{% endunless %}
-
-    {% include components/message.html text=post.description hide=hide_description alt=alt %}
-    
   </header>
+  <br><br><hr>
   <div class="markdown-body">
-  {% if no_excerpt %}
-    {{ post.content }}
-  {% else %}
-    {{ post.excerpt }}
-
-    {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
-    {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
-    <!--footer-->
-    <footer>
-      <p class="read-more">
-        {{ text | replace:"<!--post_title-->", post_title }}
-      </p>
-
-    </footer>
-  {% endif %}
-</div>
+    {% if no_excerpt %}
+     {{ post.content }}
+    { % else %}
+      {{ post.excerpt }}
+      {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
+      {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+      <!--footer-->
+      <footer>
+        <p class="read-more">
+          {{ text | replace:"<!--post_title-->", post_title }}
+        </p>
+      </footer>
+    {% endif %}
+  </div>
 </article>
 <div id="my-page-bottom"></div>
