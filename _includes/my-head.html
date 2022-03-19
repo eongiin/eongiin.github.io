@@ -1,21 +1,11 @@
 <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico'      | relative_url }}">
 <link rel="icon" href="{{ '/assets/icons/favicon.ico'      | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/icons/apple-icon-180x180.png' | relative_url }}">
-
-
 <!-- for my toc affix -->
 <script type="module">
     document.querySelector('hy-push-state').addEventListener('load', () => {
       let tocElement = document.getElementById("markdown-toc");
-
-      let li=document.createElement("li")
-      let a=document.createElement("a")
-      a.href='#my-page-bottom'
-      a.id='markdown-toc-end'
-      a.textContent='👇'
-      li.appendChild(a)
-      tocElement.appendChild(li)
-
+  
       if(tocElement){
         let affixedDiv = document.createElement("div");
         affixedDiv.style.position = "relative";
@@ -32,7 +22,6 @@
   
             for(let i=0;i<headerList.length;i++){
               if(i==headerList.length-1){
-                if(headerList[i].getBoundingClientRect().top>0){
                 prevElement?.style.removeProperty("font-weight");
                 prevElement?.style.removeProperty("color");
                 let tocId = "markdown-toc-" + headerList[i].parentNode.id;
@@ -41,8 +30,7 @@
                 prevElement.style.color = '#728a6d';
                 break;
               }
-            }
-              if(headerList[i+1].getBoundingClientRect().top>100){
+              if(headerList[i+1].getBoundingClientRect().top > 100){
                 prevElement?.style.removeProperty("font-weight");
                 prevElement?.style.removeProperty("color");
                 let tocId = "markdown-toc-" + headerList[i].parentNode.id;
@@ -57,27 +45,24 @@
       }
     });
   </script>
-
 <!--slick-->
 <link rel="stylesheet" type="text/css" href="/assets/css/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="/assets/css/slick/slick-theme.css"/>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="/assets/css/slick/slick.min.js"></script>
-
 <!-- tipuesearch -->
 <link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/assets/tipuesearch/tipuesearch_content.js"></script>
 <script src="/assets/tipuesearch/tipuesearch_set.js"></script>
 <script src="/assets/tipuesearch/tipuesearch.min.js"></script>
-
 <style> 
-    ::-webkit-scrollbar{width: 13px;}
-    ::-webkit-scrollbar-track { border-radius: 13px;}
-    ::-webkit-scrollbar-thumb {background-color:rgba(155, 177, 149, 0.5); border-radius: 13px;}
-    ::-webkit-scrollbar-thumb:hover {background: #c2e0bf;}
-    ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
-    {
-        width:10px;height:10px;background:transparent;
-    }
-  </style>
+  ::-webkit-scrollbar{width: 13px;}
+  ::-webkit-scrollbar-track { border-radius: 13px;}
+  ::-webkit-scrollbar-thumb {background-color:rgba(155, 177, 149, 0.5); border-radius: 13px;}
+  ::-webkit-scrollbar-thumb:hover {background: #c2e0bf;}
+  ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
+  {
+      width:10px;height:10px;background:transparent;
+  }
+</style>
