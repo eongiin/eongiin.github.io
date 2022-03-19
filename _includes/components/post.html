@@ -46,7 +46,7 @@
   <div class="markdown-body">
     {% if no_excerpt %}
      {{ post.content }}
-    { % else %}
+    {% else %}
       {{ post.excerpt }}
       {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
       {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
