@@ -106,6 +106,7 @@ $main-color: #7E9B78;
       font-weight: bold !important;
     }
     color:rgb(185, 202, 189);
+    font-size: 14px;
   }
 }
 
@@ -181,8 +182,8 @@ $main-color: #7E9B78;
 }
 
 pre code {
-  font-family: 'IBMPlexMono-Regular.woff','sans-serif' !important;
-  font-size: 1em; 
+  // font-family: 'IBMPlexMono-Regular.woff','sans-serif' !important;
+  font-size: 1.15em; 
   tab-size: 1em;
 }
 
