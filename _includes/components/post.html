@@ -21,28 +21,30 @@
     </h2>
     <!--카테고리-->
     <div class="post-date">
-      {% assign category_start     = "  "     | default:" in " %}
+      {% assign category_start     = " 📁 "     | default:" in " %}
       {% assign category_separator = site.data.strings.category_separator | default:" / " %}
-      {% assign tag_start          = "# "          | default:" - " %} 
-      {% assign tag_separator      = "# "     | default:". "  %}
-    
       <span class="ellipis mrl">
         {% include components/category-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator %}
         <br>
-        <span class="my-tag">
-        {% include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %}
-        </span>
         <!--년월일-->
-        <br>
         {% assign post_format = "%Y-%m-%d" | default:"%Y %m %d" %}
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
-        <br>
-        <a href="#my-page-bottom">👇Down</a>
-        <br>
+        <time datetime="{ post.date | date_to_xmlschema }}">✍️ {{ post.date | date:post_format }}</time>
+        <!-- <br> -->
+        <!-- 아래로 이동 -->
+        <!-- <a href="#my-page-bottom">👇Down</a>
+        <br> -->
+      </span>
+    </div>
+    <!-- 태그 -->
+    <div class="post-my-tag">
+      <span class="my-tag">
+        {% assign tag_start          = "🏷️ "          | default:" - " %} 
+        {% assign tag_separator      = ""     | default:""  %}
+        {% include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %}
       </span>
     </div>
   </header>
-  <br><br><hr>
+  <hr>
   <div class="markdown-body">
     {% if no_excerpt %}
      {{ post.content }}
@@ -59,4 +61,4 @@
     {% endif %}
   </div>
 </article>
-<div id="my-page-bottom"></div>
+<!-- <div id="my-page-bottom"></div> -->
