@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<!-- {{ content }} -->
+{% assign tags = site.tags | sort %}
+  <!-- <ul class="related-posts">
+    {% for tag in tags %}
+        <li class="h6">
+            <a href="/tag-{{tag[0]}}">{{ tag[0] }} ({{ tag|last|size}})</a>
+        </li>
+    {% endfor %}
+  </ul> -->
+
+  <div class="all-tags">
+    {% for tag in tags %}
+    <span class="my-tag">
+        <a href="/tag-{{tag[0]}}"><b>{{tag[0]}}</b> ({{tag|last|size}})</a>
+    </span>
+    {% endfor %}
+  </div>

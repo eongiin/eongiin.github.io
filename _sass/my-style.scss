@@ -1,4 +1,6 @@
 $main-color: #7E9B78;
+$btn-color:#eff3ef;
+$btn-hover-color:#c2e0bf;
 
 @font-face {
   font-family: 'RIDIBatang';
@@ -90,9 +92,9 @@ $main-color: #7E9B78;
 
 .my-tag a,
 .ellipis a{
-  color: #60725d !important;
+  color: #60725d;
   &:hover{
-    color:$main-color !important;
+    color:$main-color;
   }
 }
 
@@ -204,12 +206,12 @@ pre code {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background-color:#eff3ef
+  background-color:$btn-color;
+  &:hover{
+    background-color:$btn-hover-color;
+  }
 }
 
-.button:hover {
-  background-color:#c2e0bf;
-}
 #prev{
   border-radius:50px 0 0 50px;
 }
@@ -346,8 +348,35 @@ pre code {
 .my-tag{
   font-size: 15px;
   margin-right: 10px;
+  display: inline-block;
 }
 
 .post-my-tag{
   margin-top: 24px !important;
+}
+
+.all-tags{
+  > .my-tag a{
+    position:static;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: $btn-color;
+    padding:3px 10px;
+    border-radius: 20px;
+    margin-top:10px;
+    &:hover{
+      background-color: $btn-hover-color;
+    }
+  }
+}
+
+
+.my-category{
+  font-size: 14px;
+  color:#778075;
+
+}
+.flip-title{
+  text-decoration: none;
+  margin:0px;
 }
