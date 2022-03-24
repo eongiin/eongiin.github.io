@@ -56,15 +56,22 @@ menu:
     submenu:
       - title:         Java
         url:           /java/
-      - title:         SQL
-        url:           /sql/
+      - title:         Kotlin
+        url:           /kotlin/
+      - title:         Python
+        url:           /python/
 
-  - title:             Project
-    url:               /project/
+  - title:             Dev
+    url:               /dev/
     submenu:
-      - title:         Test
-        url:           /test/
-
+      - title:         Spring
+        url:           /spring/
+      - title:         Database
+        url:           /database/
+      - title:         Git
+        url:           /git/
+      - title:         Project
+        url:           /project/
 
   - title:             Coding Test
     url:               /coding-test/

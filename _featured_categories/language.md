@@ -11,7 +11,9 @@ slug: language
 ## Category
 
 * [Java]{:.heading.flip-title}
-* [SQL]{:.heading.flip-title}
+* [Kotlin]{:.heading.flip-title}
+* [Python]{:.heading.flip-title}
 
 [Java]: /java/
-[SQL]: /sql/
+[Kotlin]: /kotlin/
+[Python]: /python/

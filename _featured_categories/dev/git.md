@@ -1,11 +1,11 @@
 ---
 layout: category-list
-category: language
-bigtitle: SQL
-slug: sql
+category: dev
+bigtitle: Git
+slug: git
 # description: >
 #   하위메뉴 테스트1
-order: 2
+order: 3
 ---
 
-# SQL
+# Git
