@@ -16,12 +16,7 @@
     <a href="{{ post.url | relative_url }}" class="flip-title">
         <span>{{ post.title }}</span>
         <span class="my-category">
-            {% if til %}
-                in {{category | upcase}}
-            {% else %}
-                in {{category | capitalize}}
-            {% endif %}
-           
+            in {{site.data.format[category]}}
         </span>
     </a>
   </div>

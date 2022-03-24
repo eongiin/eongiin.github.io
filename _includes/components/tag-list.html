@@ -9,9 +9,11 @@
 {% if tags.size > 0 %}
   {% assign content = start_with %}
   {% for tag in tags %}
-    {% capture iter_separator %}{% if forloop.last %}{{ end_with }}{% else %}{{ separator }}{% endif %}{% endcapture %}
-    {% capture content_temp %}{{ content }}<a href="/tag-{{tag}}/" class="my-tag">{{ tag | capitalize }}</a>{{ iter_separator }}{% endcapture %}
-    {% assign content = content_temp %}
+    {% if site.data.tags contains tag %}<!---->
+      {% capture iter_separator %}{% if forloop.last %}{{ end_with }}{% else %}{{ separator }}{% endif %}{% endcapture %}
+      {% capture content_temp %}{{ content }}<a href="/tag-{{tag}}/" class="my-tag">{{ site.data.format[tag] }}</a>{{ iter_separator }}{% endcapture %}
+      {% assign content = content_temp %}
+    {% endif %}<!---->
   {% endfor %}
 {% endif %}
 
