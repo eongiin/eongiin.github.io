@@ -14,8 +14,7 @@ related_posts:
 sitemap: true
 published: true
 ---
-# 추상 클래스와 인터페이스
-
+# [Java] 추상 클래스와 인터페이스
 * toc 
 {:toc}
 
