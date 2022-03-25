@@ -1,6 +1,7 @@
 $main-color: #7E9B78;
-$btn-color:#eff3ef;
-$btn-hover-color:#c2e0bf;
+$btn-color:#6f7c6c;
+$btn-hover-color:#7E9B78;
+$btn-text-color:#FFF;
 
 @font-face {
   font-family: 'RIDIBatang';
@@ -90,27 +91,15 @@ $btn-hover-color:#c2e0bf;
   text-decoration: none;
 }
 
-.my-tag a,
-.ellipis a{
-  color: #60725d;
-  &:hover{
-    color:$main-color;
-  }
-}
+/////////////////////////////////////////////////
+// .my-tag a,
+// .ellipis a{
+//   color: #60725d;
+//   &:hover{
+//     color:$main-color;
+//   }
+// }
 
-.toc-show{
-  a{
-    &:link{
-      text-decoration:none;
-    }
-    &:hover{
-      color: #728a6d !important;
-      font-weight: bold !important;
-    }
-    color:rgb(185, 202, 189);
-    font-size: 14px;
-  }
-}
 
 .markdown-body {
   > li{
@@ -128,6 +117,7 @@ $btn-hover-color:#c2e0bf;
         color: $main-color !important;
       }
     }
+    
   }
 
   kbd {
@@ -172,6 +162,19 @@ $btn-hover-color:#c2e0bf;
   h6{
     color:#4f5a4c;
   }
+
+  .toc-show{
+    a{
+      text-decoration:none;
+      &:hover{
+        color: #86a781 !important;
+        font-weight: bold !important;
+      }
+      // color:rgb(185, 202, 189);
+      font-size: 14px;
+    }
+  }
+  
 }
 
 // font
@@ -202,7 +205,7 @@ pre code {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: $main-color;
+  color: $btn-text-color !important;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -246,7 +249,7 @@ pre code {
   display: inline-block !important;
   float: left !important;
   position: relative !important;
-  background-color: #95C08C !important;
+  background-color: #8C9E89 !important;
 }
 .list-post{
   li{
@@ -360,12 +363,14 @@ pre code {
     position:static;
     display: inline-block;
     box-sizing: border-box;
-    background-color: $btn-color;
+    background-color: $btn-color !important;
+    color:$btn-text-color !important;
     padding:3px 10px;
     border-radius: 20px;
     margin-top:10px;
     &:hover{
-      background-color: $btn-hover-color;
+      background-color: $btn-hover-color !important;
+      color:$btn-text-color !important;
     }
   }
 }
@@ -395,5 +400,62 @@ img + em {
   a.img-cation{
     text-decoration: none;
     color: #98a795;
+  }
+}
+
+//////////////////////////////////dark
+
+
+.content a:not(.btn):not(.no-hover){
+  text-decoration: none;
+  color:#939493;
+}
+
+.content a:not(.btn):hover{
+  color:$main-color;
+}
+
+
+element.style {
+  font-weight: bold;
+  color: rgb(185, 211, 188);
+}
+
+
+
+html{
+  color:$main-color;
+  --body-color: #333;
+  --body-bg: rgb(41, 38, 38);
+  --border-color: #536458;
+  body{
+    color:#B2B2B2;
+  }
+}
+
+hy-push-state a {
+  color: #B2B2B2;
+}
+
+.note-sm{
+  color:#B2B2B2;
+  &::before{
+    color:$main-color;
+  }
+}
+
+.my-tag a, .ellipis a{
+  &:hover{
+    color:#86a781!important;
+  }
+}
+
+div.list-post{
+  ul.related-posts{
+    a.flip-title{
+      &:hover{
+        color:$main-color;
+      }
+    }
   }
 }

@@ -17,7 +17,7 @@ layout: page
       {% assign tag=tag_info[0] %}
       {% if site.data.tags contains tag %}
         <span class="my-tag">
-            <a href="/tag-{{tag}}"><b>{{ site.data.format[tag] }}</b> ({{tag_info|last|size}})</a>
+            <a href="/tag-{{tag}}">{{ site.data.format[tag] }} ({{tag_info|last|size}})</a>
         </span>
       {% endif %}
     {% endfor %}
