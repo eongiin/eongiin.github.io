@@ -77,7 +77,7 @@ $btn-hover-color:#c2e0bf;
       // font-weight: bold !important;
       // color: #60725d !important;
       &:hover{
-        color: $main-color !important;
+        color: $main-color;
       }
     }
   }
@@ -379,4 +379,21 @@ pre code {
 .flip-title{
   text-decoration: none;
   margin:0px;
+}
+
+.align-center{
+  display:block;
+  margin:0 auto;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+  font-size: .7rem;
+  color: #98a795;
+  font-style: normal;
+  a.img-cation{
+    text-decoration: none;
+    color: #98a795;
+  }
 }
