@@ -406,9 +406,81 @@ img + em {
 //////////////////////////////////dark
 
 
+// .content a:not(.btn):not(.no-hover){
+//   text-decoration: none;
+//   color:#cccccc;
+// }
+
+// .content a:not(.btn):hover{
+//   color:$main-color;
+// }
+
+
+// element.style {
+//   font-weight: bold;
+//   color: rgb(185, 211, 188);
+// }
+
+
+
+// html{
+//   color:$main-color;
+//   --body-color: #333;
+//   --body-bg: rgb(41, 38, 38);
+//   --border-color: #536458;
+//   body{
+//     color:#B2B2B2;
+//   }
+// }
+
+
+// hy-push-state a {
+//   color: #B2B2B2;
+// }
+
+// .note-sm{
+//   color:#B2B2B2;
+//   &::before{
+//     color:$main-color;
+//   }
+// }
+
+// .my-tag a, .ellipis a{
+//   &:hover{
+//     color:#86a781!important;
+//   }
+// }
+
+// div.list-post{
+//   ul.related-posts{
+//     a.flip-title{
+//       &:hover{
+//         color:$main-color;
+//       }
+//     }
+//   }
+// }
+
+// .markdown-body{
+//   h1,h2,strong{
+//     color: $main-color;
+//   }
+//   h3{
+//     color:#a2b69d;
+//   }
+//   h4,h5,h6{
+//     color:#bfd3ba;
+//   }
+// }
+
+
+//////////////////////////gray
+
+
+
 .content a:not(.btn):not(.no-hover){
   text-decoration: none;
-  color:#cccccc;
+  color:#555;
 }
 
 .content a:not(.btn):hover{
@@ -416,30 +488,30 @@ img + em {
 }
 
 
-element.style {
-  font-weight: bold;
-  color: rgb(185, 211, 188);
-}
+// element.style {
+//   font-weight: bold;
+//   color: rgb(185, 211, 188);
+// }
 
 
 
 html{
-  color:$main-color;
-  --body-color: #333;
-  --body-bg: rgb(41, 38, 38);
-  --border-color: #536458;
-  --gray:#b3b3b3;
+  // color:
+  // --body-color:
+  --body-bg:#e2e2e2;
+  --border-color: #a5a7a5;
+  --gray:#3f3f3f;
   body{
-    color:#cccccc;
+    color:#333;
   }
 }
 
-hy-push-state a {
-  color: #B2B2B2;
-}
+// hy-push-state a {
+//   color: #B2B2B2;
+// }
 
 .note-sm{
-  color:#B2B2B2;
+  color:#696969;
   &::before{
     color:$main-color;
   }
@@ -460,3 +532,15 @@ div.list-post{
     }
   }
 }
+
+// .markdown-body{
+//   h1,h2,strong{
+//     color: $main-color;
+//   }
+//   h3{
+//     color:#a2b69d;
+//   }
+//   h4,h5,h6{
+//     color:#bfd3ba;
+//   }
+// }
