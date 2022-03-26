@@ -378,7 +378,7 @@ pre code {
 
 .my-category{
   font-size: 14px;
-  color:#778075;
+  color:#97a994;
 
 }
 .flip-title{
@@ -408,7 +408,7 @@ img + em {
 
 .content a:not(.btn):not(.no-hover){
   text-decoration: none;
-  color:#939493;
+  color:#cccccc;
 }
 
 .content a:not(.btn):hover{
@@ -428,8 +428,9 @@ html{
   --body-color: #333;
   --body-bg: rgb(41, 38, 38);
   --border-color: #536458;
+  --gray:#b3b3b3;
   body{
-    color:#B2B2B2;
+    color:#cccccc;
   }
 }
 
