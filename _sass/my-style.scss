@@ -213,6 +213,10 @@ pre code {
   &:hover{
     background-color:$btn-hover-color;
   }
+  &.disabled{
+    background-color:#d1d4d1;
+    color: rgb(138, 138, 138) !important;
+  }
 }
 
 #prev{
@@ -222,7 +226,6 @@ pre code {
   float: right;
   border-radius:0 50px 50px 0;
 }
-
 
 // time-line 목차 리스트
 
