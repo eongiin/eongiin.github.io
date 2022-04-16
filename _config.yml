@@ -230,14 +230,13 @@ defaults:
 
 markdown: kramdown
 kramdown:
-  math_engine:         mathjax
-  math_engine_opts:    {}
-  footnote_backlink:   '&#x21a9;&#xfe0e;'
   highlighter: rouge
   syntax_highlighter_opts:
     block:
       line_numbers: true
-
+  math_engine:         mathjax
+  math_engine_opts:    {}
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
