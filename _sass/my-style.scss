@@ -536,14 +536,5 @@ div.list-post{
   }
 }
 
-// .markdown-body{
-//   h1,h2,strong{
-//     color: $main-color;
-//   }
-//   h3{
-//     color:#a2b69d;
-//   }
-//   h4,h5,h6{
-//     color:#bfd3ba;
-//   }
-// }
+.video-wrap { position:relative;padding-bottom:56.25%;height:0px;overflow:hidden; }
+.video-wrap iframe { position:absolute;top:0;left:0;width:100%;height:100%; }
