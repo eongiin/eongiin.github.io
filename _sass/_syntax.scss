@@ -7,8 +7,18 @@ $yellow:#ecd7b1;
 
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight table pre.lineno{ border-right: 2px solid rgb(92, 94, 93); color:rgb(102, 102, 102);border-radius:0px;}
-
+// .highlight table pre.lineno{ 
+//   border-right: 2px solid rgb(92, 94, 93); 
+//   color:rgb(102, 102, 102);
+//   border-radius:0px;
+//   // 라인이 복사되지 않게 한다.
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+// }
 .highlight, .highlight .w {
   color: #d0d0d0;
   background-color: $bg-color;
