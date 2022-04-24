@@ -6,7 +6,7 @@ title: permutaion and combination
 #   설명
 date: '2022-04-17 14:0:0'
 categories:
-  - coding-test
+  - problem-solving
   - appendix
 tags: [java]
 related_posts:

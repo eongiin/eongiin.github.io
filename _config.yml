@@ -68,34 +68,32 @@ menu:
         url:           /spring/
       - title:         Database
         url:           /database/
-      - title:         Git
-        url:           /git/
       - title:         Project
         url:           /project/
 
-  - title:             Coding Test
-    url:               /coding-test/
+  - title:             PS
+    url:               /problem-solving/
     submenu:
       - title:         Problem
         url:           /problem/
       - title:         Appendix
         url:           /appendix/
 
-  - title:             Tech Interview
-    url:               /tech-interview/
-    submenu:
-      - title:         Computer Architecture
-        url:           /computer-architecture/   
-      - title:         Data Structure
-        url:           /data-structure/
-      - title:         Algorithm
-        url:           /algorithm/
-      - title:         Operating System
-        url:           /operating-system/
-      - title:         Network
-        url:           /network/
-      - title:         Design Pattern
-        url:           /design-pattern/
+  # - title:             Tech Interview
+  #   url:               /tech-interview/
+  #   submenu:
+  #     - title:         Computer Architecture
+  #       url:           /computer-architecture/   
+  #     - title:         Data Structure
+  #       url:           /data-structure/
+  #     - title:         Algorithm
+  #       url:           /algorithm/
+  #     - title:         Operating System
+  #       url:           /operating-system/
+  #     - title:         Network
+  #       url:           /network/
+  #     - title:         Design Pattern
+  #       url:           /design-pattern/
 
   - title:             TIL
     url:               /til/
@@ -115,6 +113,8 @@ menu:
     submenu:
       - title:         Blog
         url:           /blog/
+      - title:         Git
+        url:           /git/
 
   - title:             Tags
     url:               /tags/

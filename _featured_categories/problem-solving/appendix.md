@@ -1,6 +1,6 @@
 ---
 layout: category-list
-category: coding-test
+category: problem-solving
 bigtitle: Appendix
 slug: appendix
 # description: >

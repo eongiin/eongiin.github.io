@@ -1,12 +1,12 @@
 ---
 layout: category-list
-bigtitle: Coding Test
-slug: coding-test
+bigtitle: Problem Solving
+slug: problem-solving
 # description: >
-#   Coding Test
+#   Problem Solving
 ---
 
-# Coding Test
+# Problem Solving
 
 ## Category
 

@@ -3,18 +3,18 @@ clean-code: Clean Code
 effective-java: Effective Java
 refactoring: Refactoring
 
-coding-test: Coding Test
+problem-solving: Problem Solving
 appendix: Appendix
 problem: Problem
 
 dev: Dev
 spring: Spring
 database: Database
-git: Git
 project: Project
 
 etc: ETC
 blog: Blog
+git: Git
 
 language: Language
 java: Java
@@ -44,4 +44,3 @@ dp: DP
 essential: Essential
 floyd-warshall: Floyd-Warshall
 implementation: Implementation
-git: Git

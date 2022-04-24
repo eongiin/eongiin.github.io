@@ -1,6 +1,6 @@
 ---
 layout: category-list
-category: coding-test
+category: problem-solving
 bigtitle: Problem
 slug: problem
 # description: >
