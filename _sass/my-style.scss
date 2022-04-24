@@ -542,3 +542,9 @@ div.list-post{
 
 .video-wrap { position:relative;padding-bottom:56.25%;height:0px;overflow:hidden; }
 .video-wrap iframe { position:absolute;top:0;left:0;width:100%;height:100%; }
+
+
+//제목 안넘치게
+h1.post-title{
+  max-width:fit-content;
+}
