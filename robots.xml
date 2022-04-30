@@ -6,7 +6,7 @@ Disallow: /
 
 User-agent: *
 Disallow: /book/
-DIsallow: /til/
+Disallow: /til/
 
 Sitemap: http://eongiin.github.io/sitemap.xml
 
