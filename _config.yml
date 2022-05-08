@@ -178,7 +178,7 @@ font:                  Noto Sans, Helvetica, Arial, RIDIBatang, sans-serif
 font_heading:          Roboto Slab, Helvetica, Arial, RIDIBatang, sans-serif
 
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
-font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
+font_code:             JetBrainsMono, RIDIBatang, Fira Code, Menlo, Monaco, Consolas, monospace;
 
 defaults:
   # You can use this to provide a default accent color and background for
