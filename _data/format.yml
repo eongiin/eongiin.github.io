@@ -38,10 +38,11 @@ backtracking: Backtracking
 bfs: BFS
 boj : BOJ
 brute-force: Brute-Force
+binary-search: Binary Search
 dfs: DFS
 dijkstra: Dijkstra
 dp: DP
 essential: Essential
 floyd-warshall: Floyd-Warshall
+graph: Graph
 implementation: Implementation
-binary-search: Binary Search
