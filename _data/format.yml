@@ -34,6 +34,7 @@ til: TIL
 
 
 again: Again
+aws: AWS
 backtracking: Backtracking
 bfs: BFS
 boj : BOJ
@@ -42,7 +43,9 @@ binary-search: Binary Search
 dfs: DFS
 dijkstra: Dijkstra
 dp: DP
+db: DB
 essential: Essential
 floyd-warshall: Floyd-Warshall
 graph: Graph
 implementation: Implementation
+linux: Linux
