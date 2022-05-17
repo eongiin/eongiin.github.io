@@ -19,6 +19,7 @@
 {% endif %}
 <aside class="related mb4" role="complementary">
 <h2 class="hr-bottom">{{ site.data.strings.related_posts | default:"Related Posts" }}</h2>
+<div id="rps"></div>
 <ul class="related-posts">
 {% for post in related_posts limit:5 %}
     {% if post %}

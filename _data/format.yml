@@ -47,5 +47,8 @@ db: DB
 essential: Essential
 floyd-warshall: Floyd-Warshall
 graph: Graph
+greedy: Greedy
 implementation: Implementation
 linux: Linux
+sorting: Sorting
+two-pointers: Two Pointers
