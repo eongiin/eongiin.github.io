@@ -42,6 +42,7 @@ brute-force: Brute-Force
 binary-search: Binary Search
 dfs: DFS
 dijkstra: Dijkstra
+divide-and-conquer: Divide and Conquer
 dp: DP
 db: DB
 essential: Essential
