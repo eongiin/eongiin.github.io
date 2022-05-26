@@ -52,4 +52,5 @@ greedy: Greedy
 implementation: Implementation
 linux: Linux
 sorting: Sorting
+stack: Stack
 two-pointers: Two Pointers
