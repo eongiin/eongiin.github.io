@@ -50,6 +50,7 @@ floyd-warshall: Floyd-Warshall
 graph: Graph
 greedy: Greedy
 implementation: Implementation
+kruskal: Kruskal
 linux: Linux
 sorting: Sorting
 stack: Stack
