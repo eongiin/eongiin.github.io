@@ -52,9 +52,11 @@ greedy: Greedy
 implementation: Implementation
 kruskal: Kruskal
 linux: Linux
+mst: MST
 sorting: Sorting
 stack: Stack
 string: String
+prim: Prim
 two-pointers: Two Pointers
 
 pj01: PJ01-WiFi
