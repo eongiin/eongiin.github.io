@@ -53,6 +53,7 @@ implementation: Implementation
 kruskal: Kruskal
 linux: Linux
 mst: MST
+segment-tree: Segment Tree
 sorting: Sorting
 stack: Stack
 string: String
