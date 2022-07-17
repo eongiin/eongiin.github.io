@@ -60,9 +60,6 @@ string: String
 prim: Prim
 two-pointers: Two Pointers
 
-mypj: 개인 프로젝트
-teampj: 팀 프로젝트
 pj01: PJ01-WiFi
 pj02: PJ02-Account
 pj03: PJ03-LMS
-pj04: PJ04-Weather
