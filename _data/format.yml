@@ -40,6 +40,7 @@ bfs: BFS
 boj : BOJ
 brute-force: Brute-Force
 binary-search: Binary Search
+code-write: 좋은 코드 작성법
 dfs: DFS
 dijkstra: Dijkstra
 divide-and-conquer: Divide and Conquer
