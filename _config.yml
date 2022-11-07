@@ -51,33 +51,35 @@ author:
 # Add links to the sidebar.
 menu:
 
-  - title:             Language
-    url:               /language/
+  # - title:             Language
+  #   url:               /language/
+  #   submenu:
+      # - title:         Java
+      #   url:           /java/
+      # - title:         Kotlin
+        # url:           /kotlin/
+      # - title:         Python
+        # url:           /python/
+
+  - title:             Algorithm
+    url:               /problem-solving/
     submenu:
-      - title:         Java
-        url:           /java/
-      - title:         Kotlin
-        url:           /kotlin/
-      - title:         Python
-        url:           /python/
+      - title:          Problem
+        url:           /problem/
+      - title:         Algorithm
+        url:           /algorithm/
 
   - title:             Dev
     url:               /dev/
     submenu:
+      - title:         Java
+        url:           /java/
       - title:         Spring
         url:           /spring/
       - title:         Database
         url:           /database/
       - title:         Project
         url:           /project/
-
-  - title:             PS
-    url:               /problem-solving/
-    submenu:
-      - title:         Problem
-        url:           /problem/
-      - title:         Appendix
-        url:           /appendix/
 
   # - title:             Tech Interview
   #   url:               /tech-interview/
@@ -98,23 +100,23 @@ menu:
   - title:             TIL
     url:               /til/
 
-  - title:             Book
-    url:               /book/
-    submenu:
-      - title:         Clean Code
-        url:           /clean-code/
-      - title:         Effective Java
-        url:           /effective-java/
-      - title:         Refactoring
-        url:           /refactoring/
+  # - title:             Book
+  #   url:               /book/
+  #   submenu:
+  #     - title:         Clean Code
+  #       url:           /clean-code/
+  #     - title:         Effective Java
+  #       url:           /effective-java/
+  #     - title:         Refactoring
+  #       url:           /refactoring/
 
-  - title:             Etc
-    url:               /etc/
-    submenu:
-      - title:         Blog
-        url:           /blog/
-      - title:         Git
-        url:           /git/
+  # - title:             Etc
+  #   url:               /etc/
+  #   submenu:
+  #     - title:         Blog
+  #       url:           /blog/
+  #     - title:         Git
+  #       url:           /git/
 
   - title:             Tags
     url:               /tags/
@@ -149,8 +151,8 @@ future: true
 # Theme
 # ---------------------------------------------------------------------------------------
 
-#theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+#remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton

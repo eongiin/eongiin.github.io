@@ -6,12 +6,12 @@ slug: problem-solving
 #   Problem Solving
 ---
 
-# Problem Solving
+# Algorithm
 
 ## Category
 
-* [Problem]{:.heading.flip-title}
-* [Appendix]{:.heading.flip-title}
+* [Problem Solving]{:.heading.flip-title}
+* [Algorithm]{:.heading.flip-title}
 
-[Problem]: /problem/
-[Appendix]: /appendix/
+[Problem Solving]: /problem/
+[Algorithm]: /algorithm/

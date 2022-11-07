@@ -6,7 +6,7 @@ title: abstract class and interface
 #   설명
 date: '2022-03-23 21:20:0'
 categories:
-  - language
+  - dev
   - java
 tags: [java]
 related_posts:

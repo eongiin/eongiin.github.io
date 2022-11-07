@@ -8,4 +8,4 @@ slug: problem
 order: 1
 ---
 
-# Problem
+# Problem Solving
