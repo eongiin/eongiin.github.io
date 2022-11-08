@@ -1,6 +1,6 @@
 ---
 layout: category-list
-category: language
+category: dev
 bigtitle: Java
 slug: java
 # description: >
