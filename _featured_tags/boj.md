@@ -3,6 +3,6 @@ layout: tag-list
 bigtitle:  BOJ
 slug: tag-boj
 description: >
-  BOJ 관련 글 모음
+  백준 문제 풀이 모음
 ---
 # BOJ

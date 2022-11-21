@@ -55,11 +55,14 @@ implementation: Implementation
 kruskal: Kruskal
 linux: Linux
 mst: MST
+prim: Prim
+pgms: Programmers
+queue: Queue
 segment-tree: Segment Tree
 sorting: Sorting
 stack: Stack
 string: String
-prim: Prim
+tech: Tech Interview
 two-pointers: Two Pointers
 
 mypj: MoVieC
