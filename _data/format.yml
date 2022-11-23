@@ -55,6 +55,7 @@ implementation: Implementation
 kruskal: Kruskal
 linux: Linux
 mst: MST
+prefix-sum: Prefix Sum
 prim: Prim
 pgms: Programmers
 queue: Queue
