@@ -42,15 +42,17 @@ boj : BOJ
 brute-force: Brute-Force
 binary-search: Binary Search
 code-write: 좋은 코드 작성법
+data-structure: Data Structure
+db: DB
 dfs: DFS
 dijkstra: Dijkstra
 divide-and-conquer: Divide and Conquer
 dp: DP
-db: DB
 essential: Essential
 floyd-warshall: Floyd-Warshall
 graph: Graph
 greedy: Greedy
+hash: Hash
 implementation: Implementation
 kruskal: Kruskal
 linux: Linux
@@ -60,6 +62,7 @@ prim: Prim
 pgms: Programmers
 queue: Queue
 segment-tree: Segment Tree
+simulation: Simulation
 sorting: Sorting
 stack: Stack
 string: String
