@@ -100,15 +100,25 @@ menu:
   - title:             TIL
     url:               /til/
 
-  # - title:             Book
-  #   url:               /book/
-  #   submenu:
-  #     - title:         Clean Code
-  #       url:           /clean-code/
-  #     - title:         Effective Java
-  #       url:           /effective-java/
-  #     - title:         Refactoring
-  #       url:           /refactoring/
+  - title:             Book
+    url:               /book/
+    submenu:
+      - title:         Clean Code
+        url:           /clean-code/
+      - title:         Effective Java
+        url:           /effective-java/
+      - title:         Refactoring
+        url:           /refactoring/
+      - title:         Effective Unit Testing
+        url:           /effective-unit-testing/
+      - title:         The Design of Web APIs
+        url:           /the-design-of-web-apis/
+      - title:         How Networks Work
+        url:           /how-networks-work/
+      - title:         Modern Java in Action
+        url:           /modern-java-in-action/
+      - title:         OBJECTS
+        url:           /objects/
 
   # - title:             Etc
   #   url:               /etc/
