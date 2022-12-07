@@ -53,14 +53,17 @@ floyd-warshall: Floyd-Warshall
 graph: Graph
 greedy: Greedy
 hash: Hash
+heap: Heap
 implementation: Implementation
 kruskal: Kruskal
 linux: Linux
 mst: MST
+pgms: Programmers
 prefix-sum: Prefix Sum
 prim: Prim
-pgms: Programmers
+priority-queue: Priority Queue
 queue: Queue
+recursive: Recursive
 segment-tree: Segment Tree
 simulation: Simulation
 sorting: Sorting
