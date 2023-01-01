@@ -61,13 +61,13 @@ menu:
       # - title:         Python
         # url:           /python/
 
-  - title:             Algorithm
+  - title:             PS
     url:               /problem-solving/
     submenu:
-      - title:          Problem
+      - title:         Problem
         url:           /problem/
-      - title:         Algorithm
-        url:           /algorithm/
+      - title:         Appendix
+        url:           /appendix/
 
   - title:             Dev
     url:               /dev/

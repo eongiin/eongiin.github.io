@@ -6,6 +6,6 @@ description: >
 grouped: true
 ---
 
-- 알고리즘 정리, 문제 풀이 :: [**Algorithm**](https://eongiin.github.io/problem-solving/)
-- 개발 관련 정리 :: [**Dev**](https://eongiin.github.io/dev/)
-- 오늘 배운 것 기록 :: [**TIL**](https://eongiin.github.io/til/)
+- 문제 풀이 :: [**PS**](/_featured_categories/problem-solving.md)
+- 개발 관련 정리 :: [**Dev**](/_featured_categories/dev.md/)
+- 오늘 배운 것 기록 :: [**TIL**](/_featured_categories/til.md/)
