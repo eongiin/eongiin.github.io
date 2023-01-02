@@ -7,7 +7,7 @@ title: permutaion and combination
 date: '2022-04-17 14:0:0'
 categories:
   - problem-solving
-  - algorithm
+  - appendix
 tags: [java]
 related_posts:
   - 
